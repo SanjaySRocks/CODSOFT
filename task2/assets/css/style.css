@@ -1,0 +1,153 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    /* background-image: url('background.jpg'); */
+}
+
+nav{
+    margin-top: 12px;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+h1.navbar-brand{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+}
+
+.navbar-brand:hover{
+    color: #333;
+}
+
+.nav-item{
+    font-weight: 600;
+    margin: 4px;
+}
+
+.nav-item:hover{
+    background: rgba(0,0,0,0.2);
+    border-radius: 14px;
+    /* transition: 0.5s ease; */
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+
+#sec1{
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(78, 31, 31, 0.432)), url('assets/img/sec1.jpg');
+    background-size: cover;
+}
+
+#sec1 div h1{
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+
+#sec1 div.head-content{
+    text-align: center;
+}
+
+#sec1 h1#text-about{
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-size: 24px;
+}
+
+#sec2{
+    display: flex;
+    height: 60vh;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white;
+}
+
+/* #about-us{
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(78, 31, 31, 0.432));
+} */
+
+#services{
+    display: auto;
+    height: 80vh;
+    background-color: red;
+    
+}
+
+#contact{
+    height: 80vh;
+    background-color: blue;
+    color: white;
+    background-image: url('assets/img/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+#contact p{
+    font-size: 20px;
+}
+
+#sec2 .about-svg{
+    width: 80px;
+    color: white;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-right{
+    display: flex;
+    align-items: right;
+    text-align: right;
+    width: 100%;
+}
+
+#about-us .col{
+    width: 50%;
+}
+
+#about-us p{
+    font-size: 24px;
+}
+
+#services {
+    padding-top: 50px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+#services .card-body{
+    color: white;
+}
+
+#services .card{
+    height: 50vh;
+}
+
+#services .img1{
+    background-image: url('assets/img/services-background.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#services .img2{
+    background-image: url('assets/img/safe-delivery.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
