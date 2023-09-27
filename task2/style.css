@@ -63,25 +63,10 @@ h1.navbar-brand{
     font-size: 24px;
 }
 
-#sec2{
-    display: flex;
-    height: 60vh;
-    background: rgb(63,94,251);
-    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    color: white;
-}
 
-/* #about-us{
-    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(78, 31, 31, 0.432));
-} */
 
-#services{
-    display: auto;
-    height: 80vh;
-    background-color: red;
-    
-}
 
+/* Contact */
 #contact{
     height: 80vh;
     background-color: blue;
@@ -96,10 +81,6 @@ h1.navbar-brand{
     font-size: 20px;
 }
 
-#sec2 .about-svg{
-    width: 80px;
-    color: white;
-}
 
 .center{
   display: flex;
@@ -115,17 +96,12 @@ h1.navbar-brand{
     width: 100%;
 }
 
-#about-us .col{
-    width: 50%;
-}
-
-#about-us p{
-    font-size: 24px;
-}
-
+/* Services */
 #services {
-    padding-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    height: auto;
 }
 
 #services .card-body{
@@ -150,4 +126,91 @@ h1.navbar-brand{
 }
 
 
+/* About Us */
+#about-us{
+    display: flex;
+}
 
+#about-us .div1{
+    width: 50%;
+    height: auto;
+    /* background-color: blue;
+    color: white; */
+    padding: 40px;
+}
+
+#about-us .div1 h1{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#about-us .div1 p{
+
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+#about-us .div2{
+    width: 50%;
+    height: auto;
+    /* background-color: red; */
+    background-image: url('assets/img/about2.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width: 620px) {
+    #about-us .div1, #about-us .div2{
+        width: 100%;
+    }
+
+    #about-us{
+        display: block;
+    }
+  }
+
+/* Sec2 */
+#sec2 {
+    display: flex;
+    color: white;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+#sec2 .about-svg{
+    width: 80px;
+}
+
+#sec2 .div1{
+    width: 33.33%;
+    height: auto;
+    padding: 40px;
+}
+
+#sec2 .div2{
+    width: 33.33%;
+    height: auto;
+    padding: 40px;
+}
+
+#sec2 .div3{
+    width: 33.33%;
+    height: auto;
+    padding: 40px;
+}
+
+#sec2 p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 620px) {
+    #sec2 .div1, #sec2 .div2, #sec2 .div3{
+        width: 100%;
+    }
+
+    #sec2{
+        display: block;
+    }
+  }
