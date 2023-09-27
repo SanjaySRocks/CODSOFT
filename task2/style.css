@@ -1,220 +1,37 @@
-body{
+*{
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
 }
 
-
-body{
-    /* background-image: url('background.jpg'); */
+section{
+    display: flex;
 }
 
-nav{
-    margin-top: 12px;
-    background: rgb(63,94,251);
-    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-}
-
-h1.navbar-brand{
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 28px;
-}
-
-.navbar-brand:hover{
-    color: #333;
-}
-
-.nav-item{
-    font-weight: 600;
-    margin: 4px;
-}
-
-.nav-item:hover{
-    background: rgba(0,0,0,0.2);
-    border-radius: 14px;
-    /* transition: 0.5s ease; */
-}
-
-.nav-link{
-    color: aliceblue;
-}
-
-
-#sec1{
-    height: 100vh;
-    color: white;
-    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(78, 31, 31, 0.432)), url('assets/img/sec1.jpg');
-    background-size: cover;
-}
-
-#sec1 div h1{
-    padding-top: 10%;
-    margin-bottom: 5%;
-}
-
-#sec1 div.head-content{
-    text-align: center;
-}
-
-#sec1 h1#text-about{
-    padding-top: 0px;
-    padding-bottom: 100px;
-    font-size: 24px;
-}
-
-
-
-
-/* Contact */
-#contact{
-    height: 80vh;
+.div1{
+    width: 50%;
+    height: 300px;
     background-color: blue;
     color: white;
-    background-image: url('assets/img/contact.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
 }
 
-#contact p{
-    font-size: 20px;
-}
-
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.img-right{
-    display: flex;
-    align-items: right;
-    text-align: right;
-    width: 100%;
-}
-
-/* Services */
-#services {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    height: auto;
-}
-
-#services .card-body{
-    color: white;
-}
-
-#services .card{
-    height: 50vh;
-}
-
-#services .img1{
-    background-image: url('assets/img/services-background.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
-
-#services .img2{
-    background-image: url('assets/img/safe-delivery.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
-
-/* About Us */
-#about-us{
-    display: flex;
-}
-
-#about-us .div1{
-    width: 50%;
-    height: auto;
-    /* background-color: blue;
-    color: white; */
+.div1 h1{
     padding: 40px;
 }
 
-#about-us .div1 h1{
-    padding-top: 20px;
-    padding-left: 40px;
-}
-
-#about-us .div1 p{
-
-    padding-left: 40px;
-    padding-right: 20px;
-    font-size: 20px;
-}
-
-#about-us .div2{
+.div2{
     width: 50%;
-    height: auto;
+    height: 300px;
     /* background-color: red; */
-    background-image: url('assets/img/about2.jpg');
+    background-image: url('image.jpg');
     background-size: cover;
 }
 
 @media screen and (max-width: 620px) {
-    #about-us .div1, #about-us .div2{
+    .div1, .div2{
         width: 100%;
     }
 
-    #about-us .div2{
-        height: 400px;
-    }
-
-    #about-us{
-        display: block;
-    }
-  }
-
-/* Sec2 */
-#sec2 {
-    display: flex;
-    color: white;
-    background: rgb(63,94,251);
-    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-}
-
-#sec2 .about-svg{
-    width: 80px;
-}
-
-#sec2 .div1{
-    width: 33.33%;
-    height: auto;
-    padding: 40px;
-}
-
-#sec2 .div2{
-    width: 33.33%;
-    height: auto;
-    padding: 40px;
-}
-
-#sec2 .div3{
-    width: 33.33%;
-    height: auto;
-    padding: 40px;
-}
-
-#sec2 p{
-    padding-top: 10px;
-    font-size: 20px;
-}
-
-
-@media screen and (max-width: 620px) {
-    #sec2 .div1, #sec2 .div2, #sec2 .div3{
-        width: 100%;
-    }
-
-    #sec2{
+    section{
         display: block;
     }
   }
