@@ -1,23 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjay'S Portfolio</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjay Singh - Portfolio</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    
-    <section>
-        <div class="div1">
-            <h1>Hello</h1>
+
+<body id="top" class="dark_theme">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">SanjayS<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="./myimage.png" media="(min-width: 768px)">
+            <source srcset="./myimage.png" media="(min-width: 500px)">
+            <img src="./myimage.png" alt="A man in a blue shirt with a happy expression"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">I'm Sanjay Singh</h2>
+          <h3 class="h3 hero-title">Backend Developer</h3>
+
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+
         </div>
 
-        <div class="div2">
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="https://sanjaysrocks.github.io/littlelink/" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://sanjaysrocks.github.io/littlelink/" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://sanjaysrocks.github.io/littlelink/" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                5+ <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                60+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./myimage2.jpeg" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Do you have a plan? I will deploy the rest :)</h2>
+
+          <p class="section-text">
+            Hi! I’m Sanjay, and I am passionate about exploring the world of technology and seeking opportunities to enhance my skills in this field. With a solid foundation in computer science and information technology, I am equipped with the knowledge and skills necessary to take on challenges in the tech industry.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary">Hire me</button>
+
+            <a class="btn btn-primary" href="https://drive.google.com/file/d/13TX3HFDRxJknweD6hIocOqWV5ioQdf-T/view?usp=drive_link">Download cv</a>
+          </div>
 
         </div>
 
-    </section>
+      </section>
+
+
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What Can I Do With My Programming Skills?
+          </h2>
+
+          <p class="section-text">
+            My skill set includes a broad range of abilities essential to the IT industry. I bring a comprehensive approach to problem-solving and creativity, from frontend development through backend development.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vue</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ajax</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">My Projects</p>
+
+              <h2 class="h3 section-title">Check Out My Work!</h2>
+
+              <p class="section-text">
+                I have developed some useful applications to solve out real world problems!
+              </p>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/projects/chat-app.jpg" class="w-100" alt="A macintosh on a yellow background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Real-Time Chat App using Socket</h3>
+
+                <time class="publish-date" datetime="2022-04">Sept 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/projects/review.jpg" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Faculty Review System</h3>
+
+                <time class="publish-date" datetime="2022-04">May 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/projects/finder.jpg" class="w-100"
+                  alt="A Cassette tape on a mellow apricot background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Steam ID Finder</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/projects/short-url.jpg" class="w-100"
+                  alt="Blue digital watch on a dark liver background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Mordern URL Shortner</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/projects/web-panel.jpg" class="w-100"
+                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Rank Me Web Panel</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <button class="load-more">Load more work</button>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Do you want me to build something Amazing? Please Drop a Message</h2>
+
+          <p class="section-text">
+            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  Patel Nagar, Kanpur, India 208001
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+                <a href="tel:917827743670" class="contact-info">(+91) 78277 43670</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">sanjaysinghg2u@gmail.com</a>
+
+                <a href="mailto:support@jack.com" class="contact-info">sanjay@amsgaming.in</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g Kenndy" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g kenndy@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="https://github.com/sanjaysrocks">
+         Sanjay Singh<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2023 <a href="#">SanjayS</a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
