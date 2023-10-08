@@ -80,6 +80,8 @@ body {
 }
 
 .text-head{
+    color: #fff;
+    text-shadow: 2px 2px black;
     margin-bottom: 20px;
 }
 
