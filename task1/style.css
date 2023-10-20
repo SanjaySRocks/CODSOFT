@@ -25,19 +25,19 @@ h1.navbar-brand{
     color: #333;
 }
 
-.nav-item{
+.nav-link{
     font-weight: 600;
     margin: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
 }
 
-.nav-item:hover{
+.nav-link:hover{
+    color: white;
     background: rgba(0,0,0,0.2);
     border-radius: 14px;
-    /* transition: 0.5s ease; */
-}
-
-.nav-link{
-    color: aliceblue;
+    transition: 0.1s ease-in;
 }
 
 
@@ -216,5 +216,28 @@ h1.navbar-brand{
 
     #sec2{
         display: block;
+    }
+  }
+
+
+/* Footer */
+
+footer .row{
+    align-items: center;
+}
+
+footer .col-md-4{
+    text-align: right;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 780px) {
+    footer div.col-md-4, div.col-md-8{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hero .col-md-5{
+        height: 500px;
     }
   }
